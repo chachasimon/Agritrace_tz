@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:FWP-.YYYY.-",
+ "creation": "2026-11-05 12:52:48.439370",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_t4ah",
+  "farmer",
+  "worker",
+  "payment_type",
+  "naming_series",
+  "column_break_qkbv",
+  "farm",
+  "payment_date",
+  "payment_period_start",
+  "payment_period_end",
+  "section_break_liba",
+  "amount_due",
+  "amount_paid",
+  "balance",
+  "column_break_duds",
+  "payment_status",
+  "section_break_ghda",
+  "payment_entry",
+  "remark",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_t4ah",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Farm Worker Payment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "worker",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Worker",
+   "options": "Farm Worker",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Type",
+   "options": "Daily\nMonthly\nPer Task",
+   "reqd": 1
+  },
+  {
+   "default": "FWP-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming series ",
+   "options": "FWP-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_qkbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_period_start",
+   "fieldtype": "Date",
+   "label": "Payment Period Start"
+  },
+  {
+   "fieldname": "payment_period_end",
+   "fieldtype": "Date",
+   "label": "Payment Period End"
+  },
+  {
+   "fieldname": "section_break_liba",
+   "fieldtype": "Section Break",
+   "label": "Payment Records"
+  },
+  {
+   "fieldname": "amount_due",
+   "fieldtype": "Currency",
+   "label": "Amount Due",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_duds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Unpaid\nPartially Paid\nPaid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ghda",
+   "fieldtype": "Section Break",
+   "label": "Payment Entry Records"
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Table",
+   "label": "Payment Entry",
+   "options": "Worker Payment Entry"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-11-05 14:29:51.088550",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Worker Payment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

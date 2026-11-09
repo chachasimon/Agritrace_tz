@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:worker_name",
+ "creation": "2026-10-31 13:12:51.396550",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "workers_details_section",
+  "worker_name",
+  "farmer",
+  "phone_number",
+  "gender",
+  "status",
+  "column_break_cgtu",
+  "worker_type",
+  "employment_date",
+  "payment_type",
+  "default_wage"
+ ],
+ "fields": [
+  {
+   "fieldname": "workers_details_section",
+   "fieldtype": "Section Break",
+   "label": "Workers Details"
+  },
+  {
+   "fieldname": "worker_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Worker Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "column_break_cgtu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "worker_type",
+   "fieldtype": "Select",
+   "label": "Worker Type",
+   "options": "Permanent\nTemporary\nSeasonal\nContract"
+  },
+  {
+   "fieldname": "employment_date",
+   "fieldtype": "Date",
+   "label": "Employment Date"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "Daily\nMonthly\nPer Task"
+  },
+  {
+   "fieldname": "default_wage",
+   "fieldtype": "Currency",
+   "label": "Default Wage"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 10:29:41.957665",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Worker",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

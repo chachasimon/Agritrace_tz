@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:farmer_name",
+ "creation": "2026-10-30 14:57:05.293351",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "farmer_details_section",
+  "farmer_name",
+  "user_account",
+  "registration_date",
+  "column_break_quwm",
+  "phone_number",
+  "email_address",
+  "status",
+  "location_section",
+  "region",
+  "district",
+  "small_text"
+ ],
+ "fields": [
+  {
+   "fieldname": "farmer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farmer details "
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer Name",
+   "options": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "user_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Account",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Registration Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nSuspended",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_quwm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "small_text",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-31 21:29:05.484925",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farmer",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriTrace Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farmer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "farmer_name"
+}

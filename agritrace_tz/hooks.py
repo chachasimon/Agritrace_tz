@@ -5,6 +5,216 @@ app_description = "agritrace it is the system for farmers management"
 app_email = "ngainachacha@gmail.com"
 app_license = "mit"
 
+
+permission_query_conditions = {
+    "Farmer": "agritrace_tz.agritrace_tz.permission.get_farmer_query",
+    "Farm": "agritrace_tz.agritrace_tz.permission.get_farm_query",
+    "Farm Plot": "agritrace_tz.agritrace_tz.permission.get_farm_plot_query",
+    "Agricultural Season": "agritrace_tz.agritrace_tz.permission.get_agricultural_season_query",
+    "Crop Cycle": "agritrace_tz.agritrace_tz.permission.get_crop_cycle_query",
+    "Agricultural Activity": "agritrace_tz.agritrace_tz.permission.get_agricultural_activity_query",
+    "Farm Worker": "agritrace_tz.agritrace_tz.permission.get_farm_worker_query",
+    "Farm Worker Payment": "agritrace_tz.agritrace_tz.permission.get_farm_worker_payment_query",
+    "Farm Budget": "agritrace_tz.agritrace_tz.permission.get_farm_budget_query",
+    "Farm Expense": "agritrace_tz.agritrace_tz.permission.get_farm_expense_query",
+    "Farm Income": "agritrace_tz.agritrace_tz.permission.get_farm_income_query",
+    "Harvest Record": "agritrace_tz.agritrace_tz.permission.get_harvest_record_query",
+    "Soil Test": "agritrace_tz.agritrace_tz.permission.get_soil_test_query",
+    "Irrigation Records": "agritrace_tz.agritrace_tz.permission.get_irrigation_records_query",
+    "Work Record": "agritrace_tz.agritrace_tz.permission.get_work_record_query",
+    "Produce Loss Record": "agritrace_tz.agritrace_tz.permission.get_produce_loss_record_query",
+    "Produce Quality Inspection": "agritrace_tz.agritrace_tz.permission.get_produce_quality_inspection_query",
+    "Paste And Disease Observation": "agritrace_tz.agritrace_tz.permission.get_paste_and_disease_observation_query",
+    "Farm Equipment Usage": "agritrace_tz.agritrace_tz.permission.get_farm_equipment_usage_query",
+    "Farm Worker Assignment": "agritrace_tz.agritrace_tz.permission.get_farm_worker_assignment_query",
+    "Farm Activity": "agritrace_tz.agritrace_tz.permission.get_farm_activity_query",
+    "Crop": "agritrace_tz.agritrace_tz.permission.get_crop_query",
+    "Farm Activity Type": "agritrace_tz.agritrace_tz.permission.get_farm_activity_type_query",
+    "Warehouse": "agritrace_tz.agritrace_tz.permission.get_warehouse_query",
+    "Asset": "agritrace_tz.agritrace_tz.permission.get_asset_query",
+    "Asset Repair": "agritrace_tz.agritrace_tz.permission.get_asset_repair_query",
+    "Asset Maintenance": "agritrace_tz.agritrace_tz.permission.get_asset_maintenance_query",
+    "Asset Maintenance Log": "agritrace_tz.agritrace_tz.permission.get_asset_maintenance_log_query",
+    "Material Request": "agritrace_tz.agritrace_tz.permission.get_material_request_query",
+    "Purchase Order": "agritrace_tz.agritrace_tz.permission.get_purchase_order_query",
+    "Purchase Receipt": "agritrace_tz.agritrace_tz.permission.get_purchase_receipt_query",
+    "Purchase Invoice": "agritrace_tz.agritrace_tz.permission.get_purchase_invoice_query",
+    "Stock Entry": "agritrace_tz.agritrace_tz.permission.get_stock_entry_query",
+    "Sales Order": "agritrace_tz.agritrace_tz.permission.get_sales_order_query",
+    "Sales Invoice": "agritrace_tz.agritrace_tz.permission.get_sales_invoice_query",
+    "Supplier": "agritrace_tz.agritrace_tz.permission.get_supplier_query",
+    "Customer": "agritrace_tz.agritrace_tz.permission.get_customer_query",
+}
+
+
+has_permission = {
+    "Farmer": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Plot": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Agricultural Season": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Crop Cycle": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Agricultural Activity": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Worker": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Worker Payment": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Budget": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Expense": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Income": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Harvest Record": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Soil Test": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Irrigation Records": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Work Record": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Produce Loss Record": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Produce Quality Inspection": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Paste And Disease Observation": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Equipment Usage": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Worker Assignment": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Activity": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Crop": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Farm Activity Type": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Warehouse": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Asset": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Asset Repair": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Asset Maintenance": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Asset Maintenance Log": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Material Request": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Purchase Order": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Purchase Receipt": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Purchase Invoice": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Stock Entry": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Sales Order": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Sales Invoice": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Supplier": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+    "Customer": "agritrace_tz.agritrace_tz.permission.has_farmer_permission",
+}
+
+
+doc_events = {
+    # Farm management
+    "Farm": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Plot": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Agricultural Season": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Crop Cycle": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Agricultural Activity": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Worker": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Worker Payment": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Budget": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Expense": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Income": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Harvest Record": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Soil Test": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Irrigation Records": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Work Record": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Produce Loss Record": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Produce Quality Inspection": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Paste And Disease Observation": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Equipment Usage": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+    "Farm Worker Assignment": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership"
+    },
+
+    # ERPNext ownership validation + existing custom validation
+    "Warehouse": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.warehouse.validate_warehouse"
+    },
+    "Asset": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.asset.validate_asset"
+    },
+    "Asset Repair": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.asset_repair.validate_asset_repair"
+    },
+    "Asset Maintenance": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.asset_maintenance.validate_asset_maintenance"
+    },
+    "Asset Maintenance Log": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.asset_maintenance_log.validate_asset_maintenance_log"
+    },
+    "Material Request": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.material_request.validate_material_request"
+    },
+    "Purchase Order": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.purchase_order.validate_purchase_order"
+    },
+    "Purchase Receipt": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.purchase_receipt.validate_purchase_receipt"
+    },
+    "Stock Entry": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.stock_entry.validate_stock_entry"
+    },
+    "Purchase Invoice": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.purchase_invoice.validate_purchase_invoice"
+    },
+    "Sales Order": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.sales_order.validate_sales_order"
+    },
+    "Sales Invoice": {
+        "before_validate": "agritrace_tz.agritrace_tz.permission.validate_document_ownership",
+        "validate": "agritrace_tz.agritrace_tz.sales_invoice.validate_sales_invoice"
+    },
+
+    # Supplier and Customer keep their dedicated ownership validation
+    "Supplier": {
+        "before_validate": "agritrace_tz.agritrace_tz.party.validate_party_ownership"
+    },
+    "Customer": {
+        "before_validate": "agritrace_tz.agritrace_tz.party.validate_party_ownership"
+    }
+}
+
+scheduler_events = {
+    "hourly": [
+        "agritrace_tz.tasks.check_farm_budget_alerts"
+    ],
+    "daily": [
+        "agritrace_tz.tasks.check_worker_payment_reminders"
+    ]
+}
 # Apps
 # ------------------
 
@@ -276,4 +486,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-

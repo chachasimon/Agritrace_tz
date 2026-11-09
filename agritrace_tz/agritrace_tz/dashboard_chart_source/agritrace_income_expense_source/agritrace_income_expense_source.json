@@ -1,0 +1,13 @@
+{
+ "creation": "2026-11-07 14:00:46.511129",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2026-11-07 14:00:46.511129",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "AgriTrace Income Expense Source",
+ "owner": "Administrator",
+ "source_name": "AgriTrace Income Expense Source",
+ "timeseries": 1
+}

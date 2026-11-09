@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-10-31 13:54:27.261104",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "workers_details_section",
+  "usage_reference",
+  "farmer",
+  "phone_number",
+  "farm",
+  "plot",
+  "crop_cycle",
+  "usage_details_section",
+  "usage_date",
+  "start_reading",
+  "end_reading",
+  "usage_duration",
+  "fuel_cost",
+  "operator"
+ ],
+ "fields": [
+  {
+   "fieldname": "workers_details_section",
+   "fieldtype": "Section Break",
+   "label": "Workers Details"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "usage_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Usage Reference",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Farm Plot"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "usage_details_section",
+   "fieldtype": "Section Break",
+   "label": "Usage Details"
+  },
+  {
+   "fieldname": "usage_date",
+   "fieldtype": "Date",
+   "label": "Usage Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_reading",
+   "fieldtype": "Float",
+   "label": "Start Reading"
+  },
+  {
+   "fieldname": "end_reading",
+   "fieldtype": "Float",
+   "label": "End Reading"
+  },
+  {
+   "fieldname": "usage_duration",
+   "fieldtype": "Float",
+   "label": "Usage Duration"
+  },
+  {
+   "fieldname": "fuel_cost",
+   "fieldtype": "Currency",
+   "label": "Fuel Cost"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "label": "Operator",
+   "options": "Farm Worker"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-31 14:11:16.870532",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Equipment usage",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

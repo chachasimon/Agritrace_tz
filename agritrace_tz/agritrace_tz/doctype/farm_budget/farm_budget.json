@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:budget_name",
+ "creation": "2026-10-31 13:34:48.655093",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "assigment_section",
+  "budget_name",
+  "farmer",
+  "farm",
+  "agriculture_season",
+  "column_break_wfna",
+  "crop_cycle",
+  "budget_start_date",
+  "budget_end_date",
+  "status",
+  "budget_section",
+  "budget_table",
+  "roles_section",
+  "total_planned_expense",
+  "total_planned_income"
+ ],
+ "fields": [
+  {
+   "fieldname": "assigment_section",
+   "fieldtype": "Section Break",
+   "label": "Work"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wfna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "roles_section",
+   "fieldtype": "Section Break",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nApproved\nActive\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Budget Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "agriculture_season",
+   "fieldtype": "Link",
+   "label": "Agriculture Season",
+   "options": "Agricultural Season",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_start_date",
+   "fieldtype": "Date",
+   "label": "Budget Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_end_date",
+   "fieldtype": "Date",
+   "label": "Budget End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_planned_expense",
+   "fieldtype": "Currency",
+   "label": "Total Planned Expense"
+  },
+  {
+   "fieldname": "total_planned_income",
+   "fieldtype": "Currency",
+   "label": "Total Planned Income"
+  },
+  {
+   "fieldname": "budget_section",
+   "fieldtype": "Section Break",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "budget_table",
+   "fieldtype": "Table",
+   "label": "Budget Table",
+   "options": "Farm Budget Line"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 15:14:00.411616",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Budget",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

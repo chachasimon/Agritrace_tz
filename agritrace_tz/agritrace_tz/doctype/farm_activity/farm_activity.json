@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:activity_title",
+ "creation": "2026-10-30 17:15:44.856278",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_section",
+  "activity_title",
+  "farmer",
+  "farm",
+  "plot",
+  "crop_cycle",
+  "column_break_anbd",
+  "activity_type_name",
+  "activity_date",
+  "start_time",
+  "end_time",
+  "description_section",
+  "description",
+  "status",
+  "actual_cost",
+  "consuption_section",
+  "input_consumption"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_section",
+   "fieldtype": "Section Break",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "activity_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plot",
+   "options": "Farm Plot",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "column_break_anbd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activity_date",
+   "fieldtype": "Date",
+   "label": "Activity Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Planned\nIn Progress\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_cost",
+   "fieldtype": "Currency",
+   "label": "Actual Cost"
+  },
+  {
+   "fieldname": "consuption_section",
+   "fieldtype": "Section Break",
+   "label": "Consuption"
+  },
+  {
+   "fieldname": "input_consumption",
+   "fieldtype": "Table",
+   "label": "Input Consumption",
+   "options": "Input Consumption"
+  },
+  {
+   "fieldname": "activity_type_name",
+   "fieldtype": "Link",
+   "label": "Activity Type",
+   "options": "Activity Type",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-09 15:12:43.502072",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Activity",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

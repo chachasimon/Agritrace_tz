@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-10-31 19:04:15.079322",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "quality_inspection_section",
+  "inspection_reference",
+  "farmer",
+  "harvest_record",
+  "inspection_date",
+  "column_break_lojg",
+  "inspection_stage",
+  "grade",
+  "quantity_inspected",
+  "qualitry_status",
+  "quantity_section",
+  "inspector",
+  "remarks",
+  "inspection_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lojg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "harvest_record",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Harvest Record",
+   "options": "Harvest Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity_section",
+   "fieldtype": "Section Break",
+   "label": "Inspection"
+  },
+  {
+   "fieldname": "quality_inspection_section",
+   "fieldtype": "Section Break",
+   "label": "Quality Inspection"
+  },
+  {
+   "fieldname": "inspection_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Inspection Reference",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspection_date",
+   "fieldtype": "Date",
+   "label": "Inspection Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspection_stage",
+   "fieldtype": "Select",
+   "label": "Inspection Stage",
+   "options": "At Harvest\nDuring Storage\nBefore Sale"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "Grade A\nGrade B\nGrade C\nRejected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity_inspected",
+   "fieldtype": "Float",
+   "label": "Quantity Inspected",
+   "options": "Spoilage\nPest Damage\nDisease\nHandling Damage\nWeather\nOther"
+  },
+  {
+   "fieldname": "qualitry_status",
+   "fieldtype": "Select",
+   "label": "Qualitry Status",
+   "options": "Accepted\nRejected\nRequires Review"
+  },
+  {
+   "fieldname": "inspector",
+   "fieldtype": "Data",
+   "label": "Inspector"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "inspection_image",
+   "fieldtype": "Attach Image",
+   "label": "Inspection image "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-31 19:19:40.726295",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Produce quality Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

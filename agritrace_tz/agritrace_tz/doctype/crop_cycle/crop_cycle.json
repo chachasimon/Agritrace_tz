@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:crop_cycle_name",
+ "creation": "2026-10-30 15:36:52.042863",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "crop_cycle_section",
+  "crop_cycle_name",
+  "farmer",
+  "farm",
+  "column_break_zkzc",
+  "plot",
+  "crop",
+  "agricultural_season",
+  "harvesting_section",
+  "planting_date",
+  "expected_harvest_date",
+  "actual_harvest_date",
+  "status",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop_cycle_section",
+   "fieldtype": "Section Break",
+   "label": "Crop Cycle"
+  },
+  {
+   "fieldname": "crop_cycle_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crop Cycle Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zkzc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plot",
+   "options": "Farm Plot",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agricultural_season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Agricultural Season",
+   "reqd": 1
+  },
+  {
+   "fieldname": "harvesting_section",
+   "fieldtype": "Section Break",
+   "label": "Harvesting"
+  },
+  {
+   "fieldname": "planting_date",
+   "fieldtype": "Date",
+   "label": "Planting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_harvest_date",
+   "fieldtype": "Date",
+   "label": "Expected Harvest Date"
+  },
+  {
+   "fieldname": "actual_harvest_date",
+   "fieldtype": "Date",
+   "label": "Actual harvest Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Planned\nPlanted\nGrowing\nHarvesting\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-03 11:31:04.759738",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Crop Cycle",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

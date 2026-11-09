@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-10-31 18:39:17.196154",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "loss_records_section",
+  "loss_reference",
+  "farmer",
+  "farm",
+  "crop_cycle",
+  "column_break_lojg",
+  "harvest_record",
+  "loss_date",
+  "loss_reason",
+  "quantity_section",
+  "quantity_lost",
+  "uom",
+  "estimated_value",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "loss_records_section",
+   "fieldtype": "Section Break",
+   "label": "Loss Records"
+  },
+  {
+   "fieldname": "loss_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Loss Reference",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "column_break_lojg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "harvest_record",
+   "fieldtype": "Link",
+   "label": "Harvest Record",
+   "options": "Harvest Record"
+  },
+  {
+   "fieldname": "loss_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Loss Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "loss_reason",
+   "fieldtype": "Select",
+   "label": "Loss Reason",
+   "options": "Spoilage\nPest Damage\nDisease\nHandling Damage\nWeather\nOther"
+  },
+  {
+   "fieldname": "quantity_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "quantity_lost",
+   "fieldtype": "Float",
+   "label": "Quantity Lost"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Uom",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "estimated_value",
+   "fieldtype": "Currency",
+   "label": "Estimated Value"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-31 19:03:00.741272",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Produce loss record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

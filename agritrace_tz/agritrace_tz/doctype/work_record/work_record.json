@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:work_reference",
+ "creation": "2026-10-31 13:26:11.010789",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "assigment_section",
+  "work_reference",
+  "farmer",
+  "worker",
+  "farm",
+  "hours_worked",
+  "column_break_wfna",
+  "plot",
+  "crop_cycle",
+  "work_date",
+  "activity",
+  "days_worked",
+  "roles_section",
+  "rate",
+  "total_payment",
+  "payment_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "assigment_section",
+   "fieldtype": "Section Break",
+   "label": "Work"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "worker",
+   "fieldtype": "Link",
+   "label": "Worker",
+   "options": "Farm Worker"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm"
+  },
+  {
+   "fieldname": "column_break_wfna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Farm Plot"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "roles_section",
+   "fieldtype": "Section Break",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "hours_worked",
+   "fieldtype": "Float",
+   "label": "Hours Worked"
+  },
+  {
+   "fieldname": "days_worked",
+   "fieldtype": "Float",
+   "label": "Days Worked"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "work_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Reference",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "work_date",
+   "fieldtype": "Date",
+   "label": "Work Date"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "label": "Activity",
+   "options": "Farm Activity"
+  },
+  {
+   "fieldname": "total_payment",
+   "fieldtype": "Currency",
+   "label": "Total Payment"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Pending\nPartially Paid\nPaid"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-03 11:38:26.648156",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Work record",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

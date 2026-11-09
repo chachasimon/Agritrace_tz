@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-10-31 16:02:00.627295",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "harvest_details_section",
+  "harvest_reference",
+  "farmer",
+  "farm",
+  "plot",
+  "uom",
+  "column_break_wksw",
+  "crop_cycle",
+  "harvest_date",
+  "harvest_number",
+  "total_quantity",
+  "stock_entry",
+  "section_break_qjhs",
+  "harvested_by",
+  "notes",
+  "harvest_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "harvest_details_section",
+   "fieldtype": "Section Break",
+   "label": "Harvest Details"
+  },
+  {
+   "fieldname": "harvest_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Harvest Reference",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Farm Plot",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_wksw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "harvest_date",
+   "fieldtype": "Date",
+   "label": "Harvest Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "harvest_number",
+   "fieldtype": "Int",
+   "label": "Harvest Number"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_qjhs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "harvested_by",
+   "fieldtype": "Link",
+   "label": "Harvested By",
+   "options": "Farm Worker"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "harvest_detail",
+   "fieldtype": "Table",
+   "label": "Harvest Detail",
+   "options": "Harvest Detail"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-06 10:10:22.776417",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Harvest Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

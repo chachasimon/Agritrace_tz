@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:plot_name",
+ "creation": "2026-10-30 15:16:13.729244",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_section",
+  "plot_name",
+  "plot_code",
+  "plot_size",
+  "column_break_ikkf",
+  "farm",
+  "area_unit",
+  "soil_type",
+  "irigation_section",
+  "irrigation_available",
+  "description",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_section",
+   "fieldtype": "Section Break",
+   "label": "Plot"
+  },
+  {
+   "fieldname": "plot_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plot Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "plot_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plot Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plot_size",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Plot size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ikkf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_unit",
+   "fieldtype": "Select",
+   "label": "Area Unit",
+   "options": "Acre\nHectare",
+   "reqd": 1
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "label": "Soil Type",
+   "options": "Clay\nSandy\nLoamy\nSilty\nOther"
+  },
+  {
+   "default": "0",
+   "fieldname": "irrigation_available",
+   "fieldtype": "Check",
+   "label": "Irrigation Available"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nUnder maintenance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "irigation_section",
+   "fieldtype": "Section Break",
+   "label": "Irrigation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-03 11:28:44.650891",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Plot",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

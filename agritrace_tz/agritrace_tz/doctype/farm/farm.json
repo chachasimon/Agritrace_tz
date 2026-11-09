@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:farm_name",
+ "creation": "2026-10-30 15:06:52.983837",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "farm_details_section",
+  "farm_name",
+  "farm_code",
+  "region",
+  "total_size",
+  "column_break_cdbs",
+  "farmer",
+  "location",
+  "district",
+  "area_unit",
+  "ownership_section",
+  "ownership_type",
+  "registration_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "farm_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farm Details"
+  },
+  {
+   "fieldname": "farm_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farm Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "farm_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farm Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "total_size",
+   "fieldtype": "Float",
+   "label": "Total size",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_cdbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "default": "Acre",
+   "fieldname": "area_unit",
+   "fieldtype": "Select",
+   "label": "Area Unit",
+   "options": "Acre\nHectare"
+  },
+  {
+   "fieldname": "ownership_section",
+   "fieldtype": "Section Break",
+   "label": "Ownership"
+  },
+  {
+   "fieldname": "ownership_type",
+   "fieldtype": "Select",
+   "label": "Ownership Type",
+   "options": "Owned\nLeased\nFamily Land\nOther"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-03 11:24:57.532823",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

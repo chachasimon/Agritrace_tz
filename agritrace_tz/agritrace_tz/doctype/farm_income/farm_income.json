@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:FIN-.YYYY.-",
+ "creation": "2026-11-05 15:48:26.057184",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "farmer",
+  "amount",
+  "income_date",
+  "column_break_exua",
+  "farm",
+  "crop_cycle",
+  "income_category",
+  "section_break_ygft",
+  "customer_name",
+  "payment_method",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "default": "FIN-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Naming Series",
+   "options": "FIN-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_exua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "income_category",
+   "fieldtype": "Select",
+   "label": "Income Category",
+   "options": "Crop Sales\nLivestock Sales\nOther Farm Income",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ygft",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "Cash\nBank Transfer\nMobile Money\nCheque\nOther"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "income_date",
+   "fieldtype": "Date",
+   "label": "Income Date",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 16:30:59.299061",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Income",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:F_EX-.YYY",
+ "creation": "2026-11-05 15:18:03.003730",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "farmer",
+  "expense_date",
+  "column_break_yamf",
+  "farm",
+  "crop_cycle",
+  "expense_category",
+  "section_break_cwvs",
+  "amount",
+  "description",
+  "payment_details_section",
+  "payment_method",
+  "supplier",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "default": "FEX-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "FEX-.YYYY.-"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yamf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "expense_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expense Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Expense Category",
+   "options": "Seeds\nFertilizers\nPesticides\nLabour\nIrrigation\nTransport\nEquipment\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_cwvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "Cash\nBank Transfer\nMobile Money\nCheque\nOther"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 15:32:16.786577",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Farm Expense",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

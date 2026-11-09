@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:crop_name",
+ "creation": "2026-10-30 15:22:47.245830",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "crop_section",
+  "crop_name",
+  "scientific_name",
+  "default_unit",
+  "is_active",
+  "column_break_phfr",
+  "crop_category",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop_section",
+   "fieldtype": "Section Break",
+   "label": "Crop"
+  },
+  {
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crop Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "scientific_name",
+   "fieldtype": "Data",
+   "label": "Scientific Name"
+  },
+  {
+   "fieldname": "default_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Unit",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "column_break_phfr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Crop Category",
+   "options": "Cereal\nLegume\nVegetable\nFruit\nRoot and Tuber\nCash Crop\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-03 11:29:34.883996",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Crop",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

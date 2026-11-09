@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:observation_reference",
+ "creation": "2026-10-31 13:03:39.593970",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "observation_section",
+  "observation_reference",
+  "farmer",
+  "farm",
+  "plot",
+  "crop_cycle",
+  "column_break_dylh",
+  "observation_date",
+  "observation_type",
+  "problem_name",
+  "severity",
+  "description_section",
+  "description",
+  "evidence_image",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "observation_section",
+   "fieldtype": "Section Break",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "observation_reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Observation Reference",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer",
+   "options": "Farmer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Farm Plot"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "column_break_dylh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_date",
+   "fieldtype": "Date",
+   "label": "Observation Date"
+  },
+  {
+   "fieldname": "observation_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Observation Type",
+   "options": "Pest\nDisease\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "problem_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Problem Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "evidence_image",
+   "fieldtype": "Attach",
+   "label": "Evidence Image"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nUnder Monitoring\nResolved"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-03 11:34:21.700508",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Paste And Disease Observation",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

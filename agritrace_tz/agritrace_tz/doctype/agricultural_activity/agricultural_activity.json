@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:ACT.-.YYYY.-.####",
+ "creation": "2026-11-03 13:06:58.757590",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "farmer",
+  "farm",
+  "farm_plot",
+  "column_break_wmll",
+  "activity_title",
+  "crop_cycle",
+  "activity_type",
+  "activity_date",
+  "section_break_ffyn",
+  "select_lplq",
+  "small_text_yfrr",
+  "section_break_shxr",
+  "activity_input",
+  "activity_worker",
+  "total_input_cost",
+  "total_labour_cost",
+  "total_activity_cost",
+  "note"
+ ],
+ "fields": [
+  {
+   "default": "ACT-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Naming Series",
+   "options": "ACT-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm"
+  },
+  {
+   "fieldname": "farm_plot",
+   "fieldtype": "Link",
+   "label": "Farm Plot",
+   "options": "Farm Plot"
+  },
+  {
+   "fieldname": "column_break_wmll",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activity_title",
+   "fieldtype": "Data",
+   "label": "Activity Title"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Link",
+   "label": "Activity Type",
+   "options": "Farm Activity Type"
+  },
+  {
+   "fieldname": "activity_date",
+   "fieldtype": "Date",
+   "label": "Activity Date"
+  },
+  {
+   "fieldname": "section_break_ffyn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Planned",
+   "fieldname": "select_lplq",
+   "fieldtype": "Select",
+   "options": "Planned\nIn Progress\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "small_text_yfrr",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_shxr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "activity_worker",
+   "fieldtype": "Table",
+   "label": "Activity Worker",
+   "options": "Activity Worker"
+  },
+  {
+   "fieldname": "activity_input",
+   "fieldtype": "Table",
+   "label": "Activity Input",
+   "options": "Activity Input"
+  },
+  {
+   "fieldname": "total_input_cost",
+   "fieldtype": "Currency",
+   "label": "Total Input Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_labour_cost",
+   "fieldtype": "Currency",
+   "label": "Total Labour Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_activity_cost",
+   "fieldtype": "Currency",
+   "label": "Total Activity Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-05 12:29:32.436724",
+ "modified_by": "Administrator",
+ "module": "Agritrace Tz",
+ "name": "Agricultural Activity",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
